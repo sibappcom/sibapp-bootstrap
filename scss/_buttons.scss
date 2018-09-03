@@ -43,7 +43,7 @@
     @include box-shadow($btn-active-box-shadow);
 
     &:focus {
-      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+      //@include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
     }
   }
 }
@@ -112,12 +112,26 @@ fieldset:disabled a.btn {
 
 .btn-lg {
   @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
+  &.btn-carved {
+    @include button-carved($btn-line-height-lg, $font-size-lg, $btn-padding-y-lg);
+  }
 }
 
 .btn-sm {
   @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+  &.btn-carved {
+    @include button-carved($btn-line-height-sm, $font-size-sm, $btn-padding-y-sm);
+  }
 }
 
+
+//
+// Carved buttons
+//
+
+.btn-carved {
+  @include button-carved($btn-line-height, $font-size-base, $btn-padding-y);
+}
 
 //
 // Block button

@@ -21,6 +21,7 @@
   flex-wrap: wrap; // allow us to do the line break for collapsing content
   align-items: center;
   justify-content: space-between; // space out brand from logo
+  min-height: 3.75rem;
   padding: $navbar-padding-y $navbar-padding-x;
 
   // Because flex properties aren't inherited, we need to redeclare these first

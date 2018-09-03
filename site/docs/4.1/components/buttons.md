@@ -62,6 +62,20 @@ Fancy larger or smaller buttons? Add `.btn-lg` or `.btn-sm` for additional sizes
 {% endcapture %}
 {% include example.html content=example %}
 
+## Carved buttons
+
+Add `.btn-carved` for carved all buttons.
+
+{% capture example %}
+<button type="button" class="btn btn-secondary btn-carved btn-lg">Large button</button>
+<button type="button" class="btn btn-secondary btn-carved">Large button</button>
+<button type="button" class="btn btn-secondary btn-carved btn-sm">Large button</button>
+{% endcapture %}
+{% include example.html content=example %}
+
+
+## Block buttons
+
 Create block level buttons—those that span the full width of a parent—by adding `.btn-block`.
 
 {% capture example %}

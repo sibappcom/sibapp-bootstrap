@@ -29,8 +29,9 @@
   background-color: $dropdown-bg;
   background-clip: padding-box;
   border: $dropdown-border-width solid $dropdown-border-color;
+  box-shadow: $dropdown-box-shadow;
   @include border-radius($dropdown-border-radius);
-  @include box-shadow($dropdown-box-shadow);
+  //@include box-shadow($dropdown-box-shadow);
 }
 
 .dropdown-menu-right {
